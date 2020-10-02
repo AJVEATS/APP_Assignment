@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>APP Assignment</title>
+    <link href="css/users.css" rel="stylesheet">
+    <script src="js/users.js"></script>
+</head>
+<body onload="getUsers(1)">
+<header>
+    <h2>APP Single Page App</h2>
+</header>
+<div>
+    <section class="columns" id="sectUsers">
+        <div class="users">
+            <h2>Users</h2>
+            <!-- hollow table for the js to input the data into -->
+            <table id="tblUsers">
+                <tbody>
+                <tr id="tblUserHeader">
+                    <th>User ID</th>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Avatar</th>
+                </tr>
+                <tr class="w3-hover-white" id="user1" onclick='getUser(1)'>
+                    <td id="number0"></td>
+                    <td id="email0"></td>
+                    <td id="firstName0"></td>
+                    <td id="surname0"></td>
+                    <td>
+                        <img alt="" id="image0" class="userAvatar" src="">
+                    </td>
+                </tr>
+                <tr class="w3-hover-white" id="user2" onclick='getUser(2)'>
+                    <td id="number1"></td>
+                    <td id="email1"></td>
+                    <td id="firstName1"></td>
+                    <td id="surname1"></td>
+                    <td>
+                        <img alt="" id="image1" class="userAvatar" src="">
+                    </td>
+                </tr>
+                <tr class="w3-hover-white" id="user3" onclick='getUser(3)'>
+                    <td id="number2"></td>
+                    <td id="email2"></td>
+                    <td id="firstName2"></td>
+                    <td id="surname2"></td>
+                    <td>
+                        <img alt="" id="image2" class="userAvatar" src="">
+                    </td>
+                </tr>
+                <tr class="w3-hover-white" id="user4" onclick='getUser(4)'>
+                    <td id="number3"></td>
+                    <td id="email3"></td>
+                    <td id="firstName3"></td>
+                    <td id="surname3"></td>
+                    <td>
+                        <img alt="" id="image3" class="userAvatar" src="">
+                    </td>
+                </tr>
+                <tr class="w3-hover-white" id="user5" onclick='getUser(5)'>
+                    <td id="number4"></td>
+                    <td id="email4"></td>
+                    <td id="firstName4"></td>
+                    <td id="surname4"></td>
+                    <td>
+                        <img alt="" id="image4" class="userAvatar" src="">
+                    </td>
+                </tr>
+                <tr class="w3-hover-white" id="user6" onclick='getUser(6)'>
+                    <td id="number5"></td>
+                    <td id="email5"></td>
+                    <td id="firstName5"></td>
+                    <td id="surname5"></td>
+                    <td>
+                        <img alt="" id="image5" class="userAvatar" src="">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div id="divPageNumber">
+                <button id="btnPrevious" onclick="getUsers(1); previousPage()">Previous Page</button>
+                Page
+                <span id="pageNumber"> 1 </span> of <span id="totalPages"> 2 </span>
+                <button id="btnNext" onclick="getUsers(2); nextPage()">Next Page</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section id="sectUser">
+            <div class="user columns">
+                <h2>Update or delete user</h2>
+                <div>
+                    <img alt="Click the user that you would like to edit from the table" id="updateUserAvatar" class="userAvatar" src=""><br>
+                    <!-- A form for users to change the users data or to delete the user -->
+                    <form id="frmUser" name="updateUser"><br>
+                        <label>User ID:</label><br>
+                        <input class="inputBox" id="updateUserID" name="updateUserID" type="text"><br>
+                        <label>Email:</label><br>
+                        <input class="inputBox" id="updateUserEmail" name="updateUserEmail" type="email"><br>
+                        <label>First Name:</label><br>
+                        <input class="inputBox" id="updateUserFirstName" name="updateUserFirstName" type="text"><br>
+                        <label>Last Name:</label><br>
+                        <input class="inputBox" id="updateUserLastName" name="updateUserLastName" type="text"><br>
+                        <input class="button" id="btnSaveUser" type="button" onclick="updateUserInfo()" value="Update user">
+                        <input class="button" id="btnSaveUser" type="button" onclick="deleteUser()" value="Delete user">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="sectNewUser">
+            <div class="newUser">
+                <h2>Create User</h2>
+                <div>
+                    <!-- A form for the users to create a new user -->
+                    <form id="frmNewUser" name="createUser">
+                        <label>Email address</label><br>
+                        <input class="inputBox" id="newUserEmail" name="newUserEmail" type="email"><br>
+                        <label>First name:</label><br>
+                        <input class="inputBox" id="newUserFirstName" name="newUserFirstName" type="text"><br>
+                        <label>Last Name:</label><br>
+                        <input class="inputBox" id="newUserLastName" name="newUserLastName" type="text"><br>
+                        <input class="button" id="createNewUser" type="button" onclick="newUser()" value="Create User">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+</body>
+</html>

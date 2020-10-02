@@ -1,0 +1,107 @@
+header {
+    color: #ffffff;
+    padding-left: 10px;
+}
+body {
+    background-color: #34b7eb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    color: black;
+}
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: #207191;
+}
+@media screen and (max-width: 1700px) {
+    .users {
+        width: 98%;
+    }
+}
+button {
+    border-style: solid;
+    border-radius: 4px;
+    color: #34b7eb;
+    border-color: #34b7eb;
+    margin: 5px;
+}
+button:hover {
+    border-color: #ffffff;
+    background-color: #34b7eb;
+    color: #ffffff;
+}
+input[type=text], [type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #34b7eb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.button {
+    border-style: solid;
+    border-radius: 4px;
+    color: #34b7eb;
+    border-color: #34b7eb;
+    margin: 5px;
+}
+.button:hover {
+    border-color: #ffffff;
+    background-color: #34b7eb;
+    color: #ffffff;
+}
+.inputBox {
+    size: 20px;
+}
+.users {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 48.5%;
+    color: #ffffff;
+    padding: 0 10px 10px;
+    height: 95%;
+    margin: 3px;
+    min-width: 666px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.user {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 48.5%;
+    color: #ffffff;
+    padding: 0 10px 10px;
+    margin: 3px;
+    min-width: 666px;
+}
+.newUser {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: 48.5%;
+    color: #ffffff;
+    padding: 0 10px 10px;
+    margin: 3px;
+    min-width: 666px;
+}
+.userAvatar {
+    border-radius: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
